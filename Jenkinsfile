@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'Compiling the Java source code'
+                echo 'using POLL SCM'
+                echo 'Compiling the Java source code,'
                 sh 'javac Hello.java'
             }
         }
